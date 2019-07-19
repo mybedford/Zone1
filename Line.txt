@@ -1,0 +1,4 @@
+--name=line
+Select * from mistresspercepto.Salesrev;
+--XAxis = Sales Revenue
+--YAxis = Year
