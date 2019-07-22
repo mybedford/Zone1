@@ -1,1 +1,2 @@
+--name=query1
 Select * from mistresspercepto.Salesrev;
