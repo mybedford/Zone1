@@ -1,2 +1,2 @@
 --name=myb_sigma
-SELECT * FROM cf_redbull_output;
+SELECT * FROM td01.cf_redbull_output;
