@@ -1,4 +1,4 @@
 --name=chord_cFilter
 select * from 
-tvaw_adv.bb_borre_cfilter_output
+td01.chord_cfilter
 order by z_score desc;
