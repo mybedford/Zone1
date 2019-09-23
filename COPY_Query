@@ -1,0 +1,16 @@
+SELECT CAST(path AS VARCHAR(20000)) AS path, count(*) as cnt from nPath (on
+(SELECT * from attribution (
+ON MistressPercepto.tv_shows_2 AS "INPUT" partition by id order by ts
+ON MistressPercepto.conversion_event_table_1 AS conversion DIMENSION
+ON MistressPercepto.model1_table_1 AS model1 DIMENSION
+USING
+EventColumn('tvshow')
+WindowSize('seconds:1200')
+TimestampColumn('ts')) as attr WHERE attr.attribution > 0.00 or attr.attribution is NULL)
+partition by id order by ts USING 
+MODE (NONOVERLAPPING)
+pattern('a*.bb')
+symbols(tvshow <> 'BreakingBad' as a,
+tvshow = 'BreakingBad' as bb)
+result(accumulate(tvshow of any (a,bb)) as path))
+GROUP BY path order by cnt desc;
