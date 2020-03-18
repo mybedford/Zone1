@@ -1,2 +1,2 @@
 --name=myb_redbull
-SELECT * FROM user1.cf_redbull;
+SELECT * FROM td01.cf_redbull_output;
