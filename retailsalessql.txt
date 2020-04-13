@@ -1,2 +1,2 @@
 --name=pie_bar
-Select * From mistresspercepto.retailsales;
+Select * From TechLassy.retailsales;
