@@ -1,4 +1,4 @@
 --name=chord_cFilter
 select * from 
-td01.chord_cfilter
+TechLassy.chord_cfilter
 order by z_score desc;
