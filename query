@@ -1,2 +1,2 @@
 --name=myb_redbull
-SELECT * FROM TRNG_TDU_TD01.cf_redbull_output;
+SELECT * FROM TRNG_TDU_TD01.myb_cf_redbull;
