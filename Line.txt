@@ -1,4 +1,4 @@
 --name=line
-Select * from mistresspercepto.Salesrev;
+Select * from TRNG_TDU_TD01.Salesrev;
 --XAxis = Sales Revenue
 --YAxis = Year
