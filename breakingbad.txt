@@ -1,9 +1,9 @@
 --name=MYB_TreenPath
 SELECT CAST(path AS VARCHAR(20000)) AS path, count(*) AS cnt  FROM nPath (ON
 (SELECT * from attribution (
-ON Techlassy.tv_shows_2 AS "INPUT" PARTITION BY id ORDER BY ts
-ON Techlassy.conversion_event_table AS conversion DIMENSION
-ON Techlassy.model AS model1 DIMENSION
+ON TRNG_TDU_TD01.tv_shows AS "INPUT" PARTITION BY id ORDER BY ts
+ON TRNG_TDU_TD01.conversion_event_table AS conversion DIMENSION
+ON TRNG_TDU_TD01.model AS model1 DIMENSION
 USING
 EventColumn('tvshow')
 WindowSize ('seconds:1200')
