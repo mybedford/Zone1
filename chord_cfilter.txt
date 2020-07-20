@@ -1,4 +1,4 @@
 --name=chord_cFilter
 select * from 
-TRNG_TDU_TD01.chord_cfilter
+TRNG_TDU_TD01.MYB_Chord_cFilter
 order by z_score desc;
