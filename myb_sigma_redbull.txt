@@ -1,2 +1,2 @@
 --name=myb_sigma
-SELECT * FROM TechLassy.cf_redbull;
+SELECT * FROM TRNG_TDU_TD01.myb_cf_redbull;
